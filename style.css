@@ -1,0 +1,44 @@
+body{
+    overflow: hidden;
+    display: flex;
+    margin:0;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    vertical-align: middle;
+
+}
+.container{
+    display:flex;
+    width: 90vh;
+}
+.panel{
+    flex:1;
+    height: 80vh;
+    margin:10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius:40px;
+    position: relative;
+    transition: flex 0.7s ease-in ;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    
+}
+.panel h4{
+    font-size: xx-large;
+    opacity: 0;
+    bottom:20px;
+    left:20px;
+    position: absolute;
+    opacity: 0;
+}
+.panel.active{
+    flex:10;
+    
+} 
+.panel.active h4{
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
